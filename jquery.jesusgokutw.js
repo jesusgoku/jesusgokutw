@@ -110,6 +110,14 @@
 
 						});
 					}
+					else
+					{
+						_this.each(function() {
+							var $this = $(this);
+							var html = '<p>No hay resultados</p>';
+							$this.html( html );
+						});
+					}
 
 					$.JesusGokuTW.lastData = data;
 					$.JesusGokuTW.countConnect += 1;
